@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="6">
+
+  <testsuite name="Azure.Advanced-my-azure-customers-test"
+    errors="0" failures="0" hostname="" id="" package="Azure" skipped="0"
+    tests="6" time="28.32" timestamp="">
+  
+    <testcase name="Scenario 1: Display of the main screen" classname="Azure.Advanced-my-azure-customers-test" time="2.391" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 2: Search for a valid element" classname="Azure.Advanced-my-azure-customers-test" time="1.198" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 3: Searching for an invalid element" classname="Azure.Advanced-my-azure-customers-test" time="0.1270" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 4: Display details of the “Governance” option" classname="Azure.Advanced-my-azure-customers-test" time="0.2190" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 5: Display details of the &#34;AzureNativeBackup&#34; option" classname="Azure.Advanced-my-azure-customers-test" time="0.8090" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 6: Add a new service" classname="Azure.Advanced-my-azure-customers-test" time="1.169" assertions="1">
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

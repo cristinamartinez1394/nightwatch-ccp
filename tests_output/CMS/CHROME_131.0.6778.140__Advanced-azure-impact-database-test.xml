@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="6">
+
+  <testsuite name="CMS.Advanced-azure-impact-database-test"
+    errors="0" failures="0" hostname="" id="" package="CMS" skipped="0"
+    tests="6" time="52.85" timestamp="">
+  
+    <testcase name="Scenario 1: Display of the main screen" classname="CMS.Advanced-azure-impact-database-test" time="14.46" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 2: Search for a valid element" classname="CMS.Advanced-azure-impact-database-test" time="1.327" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 3: Searching for an invalid element" classname="CMS.Advanced-azure-impact-database-test" time="0.1820" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 4: Add a new record" classname="CMS.Advanced-azure-impact-database-test" time="2.491" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 5: Edit a record" classname="CMS.Advanced-azure-impact-database-test" time="2.913" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 5: Delete a record" classname="CMS.Advanced-azure-impact-database-test" time="3.547" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="4"
+            failures="1"
+            tests="5">
+
+  <testsuite name="Azure.Essentials-my-azure-customers-test"
+    errors="4" failures="1" hostname="" id="" package="Azure" skipped="0"
+    tests="5" time="78.20" timestamp="">
+  
+    <testcase name="Scenario 1: Display of the main screen" classname="Azure.Essentials-my-azure-customers-test" time="2.874" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 2: Searching for an invalid element" classname="Azure.Essentials-my-azure-customers-test" time="1.143" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 3: Search for a valid element" classname="Azure.Essentials-my-azure-customers-test" time="0.1560" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 4: Group display" classname="Azure.Essentials-my-azure-customers-test" time="0.09100" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 5: Helper display" classname="Azure.Essentials-my-azure-customers-test" time="28.14" assertions="3">
+
+    
+
+      <failure message="Testing if element &lt;div[id=&#34;notification&#34;] p&gt; contains text &#39;The solution was successfully implemented&#39; in 5000ms - expected &#34;contains text &#39;The solution was successfully implemented&#39;&#34; but got: &#34;element could not be located&#34; (5147ms)">    at Scenario 5: Helper display (C:\Users\aura.martinez\Downloads\nightwatch-ccp\test\Azure\Essentials-my-azure-customers-test.js:74:21)</failure>
+
+    
+    <error message="Testing if element [33m&lt;div[id=&#34;notification&#34;] p&gt;[39m contains text [33m&#39;The solution was successfully implemented&#39;[39m in 5000ms - expected [32m&#34;contains text &#39;The solution was successfully implemented&#39;&#34;[39m but got: [31m&#34;element could not be located&#34;[39m [90m(5147ms)[39m" type="error"><![CDATA[
+    Error
+    at Proxy.&lt;anonymous&gt; (C:\Users\aura.martinez\Downloads\nightwatch-ccp\node_modules\nightwatch\lib\api\index.js:161:30)
+    at Scenario 5: Helper display (C:\Users\aura.martinez\Downloads\nightwatch-ccp\test\Azure\Essentials-my-azure-customers-test.js:74:21)
+    at Context.call (C:\Users\aura.martinez\Downloads\nightwatch-ccp\node_modules\nightwatch\lib\testsuite\context.js:515:35)
+    at TestCase.run (C:\Users\aura.martinez\Downloads\nightwatch-ccp\node_modules\nightwatch\lib\testsuite\testcase.js:58:31)
+    at Runnable.__runFn (C:\Users\aura.martinez\Downloads\nightwatch-ccp\node_modules\nightwatch\lib\testsuite\index.js:839:80)
+    at Runnable.run (C:\Users\aura.martinez\Downloads\nightwatch-ccp\node_modules\nightwatch\lib\testsuite\runnable.js:126:21)
+    at TestSuite.executeRunnable (C:\Users\aura.martinez\Downloads\nightwatch-ccp\node_modules\nightwatch\lib\testsuite\index.js:1000:49)
+    at TestSuite.handleRunnable (C:\Users\aura.martinez\Downloads\nightwatch-ccp\node_modules\nightwatch\lib\testsuite\index.js:1015:33)
+    at C:\Users\aura.martinez\Downloads\nightwatch-ccp\node_modules\nightwatch\lib\testsuite\index.js:839:21
+    at async DefaultRunner.runTestSuite (C:\Users\aura.martinez\Downloads\nightwatch-ccp\node_modules\nightwatch\lib\runner\test-runners\default.js:83:7)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+       TimeoutError
+   An error occurred while running .setValue() command on &lt;textarea#description&gt;: element not interactable
+  (Session info: chrome=133.0.6943.98)
+    {&#34;error&#34;:{&#34;name&#34;:&#34;ElementNotInteractableError&#34;,&#34;remoteStacktrace&#34;:&#34;&#34;},&#34;status&#34;:-1,&#34;value&#34;:null}
+
+    Error location:
+    C:\Users\aura.martinez\Downloads\nightwatch-ccp\test\Azure\Essentials-my-azure-customers-test.js:64
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     62 |             .click(&#39;span.text-magentablue&#39;)
+     63 |             .setValue(&#39;input[autocapitalize=&#34;none&#34;]&#39;,[&#39;Failure Anomalies - funcolr2&#39;,client.Keys.ENTER])
+     64 |             .setValue(&#39;textarea#description&#39;,&#39;Testing&#39;) 
+     65 |             .click(&#39;button.bg-magentablue&#39;)
+     66 |             .click(&#39;tbody tr:nth-child(1) td:nth-child(2) div:nth-child(1) button:nth-child(1) span:nth-child(1)&#39;)
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An error occurred while running .click() command on &lt;button.bg-magentablue&gt;: Timed out while waiting for element &#34;button.bg-magentablue&#34; with &#34;css selector&#34; to be present for 5000 milliseconds.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\aura.martinez\Downloads\nightwatch-ccp\test\Azure\Essentials-my-azure-customers-test.js:65
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     63 |             .setValue(&#39;input[autocapitalize=&#34;none&#34;]&#39;,[&#39;Failure Anomalies - funcolr2&#39;,client.Keys.ENTER])
+     64 |             .setValue(&#39;textarea#description&#39;,&#39;Testing&#39;)
+     65 |             .click(&#39;button.bg-magentablue&#39;) 
+     66 |             .click(&#39;tbody tr:nth-child(1) td:nth-child(2) div:nth-child(1) button:nth-child(1) span:nth-child(1)&#39;)
+     67 |             .setValue(&#39;input[placeholder=&#34;Please select&#34;]&#39;,[&#39;Help me understand my Free Trial charges&#39;, client.Keys.ENTER])
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An error occurred while running .click() command on &lt;tbody tr:nth-child(1) td:nth-child(2) div:nth-child(1) button:nth-child(1) span:nth-child(1)&gt;: Timed out while waiting for element &#34;tbody tr:nth-child(1) td:nth-child(2) div:nth-child(1) button:nth-child(1) span:nth-child(1)&#34; with &#34;css selector&#34; to be present for 5000 milliseconds.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\aura.martinez\Downloads\nightwatch-ccp\test\Azure\Essentials-my-azure-customers-test.js:66
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     64 |             .setValue(&#39;textarea#description&#39;,&#39;Testing&#39;)
+     65 |             .click(&#39;button.bg-magentablue&#39;)
+     66 |             .click(&#39;tbody tr:nth-child(1) td:nth-child(2) div:nth-child(1) button:nth-child(1) span:nth-child(1)&#39;) 
+     67 |             .setValue(&#39;input[placeholder=&#34;Please select&#34;]&#39;,[&#39;Help me understand my Free Trial charges&#39;, client.Keys.ENTER])
+     68 |             .click(&#39;:nth-child(4) div:nth-child(1) button:nth-child(1) span:nth-child(1)&#39;)
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An error occurred while running .click() command on &lt;:nth-child(4) div:nth-child(1) button:nth-child(1) span:nth-child(1)&gt;: Timed out while waiting for element &#34;:nth-child(4) div:nth-child(1) button:nth-child(1) span:nth-child(1)&#34; with &#34;css selector&#34; to be present for 5000 milliseconds.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\aura.martinez\Downloads\nightwatch-ccp\test\Azure\Essentials-my-azure-customers-test.js:68
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     66 |             .click(&#39;tbody tr:nth-child(1) td:nth-child(2) div:nth-child(1) button:nth-child(1) span:nth-child(1)&#39;)
+     67 |             .setValue(&#39;input[placeholder=&#34;Please select&#34;]&#39;,[&#39;Help me understand my Free Trial charges&#39;, client.Keys.ENTER])
+     68 |             .click(&#39;:nth-child(4) div:nth-child(1) button:nth-child(1) span:nth-child(1)&#39;) 
+     69 |             .windowHandles(function(result){
+     70 |                 const newTab = result.value[1];
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

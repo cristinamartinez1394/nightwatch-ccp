@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="9">
+
+  <testsuite name="VCP.Value-capture-test"
+    errors="0" failures="0" hostname="" id="" package="VCP" skipped="0"
+    tests="9" time="61.19" timestamp="">
+  
+    <testcase name="Scenario 1: Main Screen Display" classname="VCP.Value-capture-test" time="2.332" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 2: Search for an element by column" classname="VCP.Value-capture-test" time="1.394" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 3: Search for a valid element" classname="VCP.Value-capture-test" time="0.2030" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 4: Search for an invalid element" classname="VCP.Value-capture-test" time="0.2650" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 5: Display of the record creation form" classname="VCP.Value-capture-test" time="1.675" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 6: Create a new value capture" classname="VCP.Value-capture-test" time="5.490" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 7: Editing a record in Value Capture" classname="VCP.Value-capture-test" time="7.723" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 8: Adding a value realization" classname="VCP.Value-capture-test" time="1.493" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 9: Delete the record" classname="VCP.Value-capture-test" time="2.954" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

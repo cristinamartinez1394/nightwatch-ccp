@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="5">
+
+  <testsuite name="CMS.Essentials-my-azure-customers-test"
+    errors="0" failures="1" hostname="" id="" package="CMS" skipped="0"
+    tests="5" time="60.94" timestamp="">
+  
+    <testcase name="Scenario 1: Display of the main screen" classname="CMS.Essentials-my-azure-customers-test" time="13.84" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 2: Searching for an invalid element" classname="CMS.Essentials-my-azure-customers-test" time="1.263" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 3: Search for a valid element" classname="CMS.Essentials-my-azure-customers-test" time="0.2190" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 4: Group display" classname="CMS.Essentials-my-azure-customers-test" time="0.1640" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 5: Helper display" classname="CMS.Essentials-my-azure-customers-test" time="13.60" assertions="3">
+
+    
+
+      <failure message="Testing if element &lt;div[id=&#34;notification&#34;] p&gt; contains text &#39;The solution was successfully implemented&#39; in 5000ms - expected &#34;contains text &#39;The solution was successfully implemented&#39;&#34; but got: &#34;element could not be located&#34; (5180ms)">    at Scenario 5: Helper display (C:\Users\aura.martinez\Downloads\nightwatch-ccp\test\CMS\Essentials-my-azure-customers-test.js:69:21)</failure>
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

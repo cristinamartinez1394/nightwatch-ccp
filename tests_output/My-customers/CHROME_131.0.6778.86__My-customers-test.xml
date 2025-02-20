@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="4">
+
+  <testsuite name="My-customers.My-customers-test"
+    errors="0" failures="0" hostname="" id="" package="My-customers" skipped="0"
+    tests="4" time="41.09" timestamp="">
+  
+    <testcase name="Scenario 1: Main Screen Display" classname="My-customers.My-customers-test" time="14.53" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 2: Search for an element that does not exist" classname="My-customers.My-customers-test" time="1.260" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 3: Search for a valid element" classname="My-customers.My-customers-test" time="0.1540" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 4: Display informational message indicating that no PEC information is enabled" classname="My-customers.My-customers-test" time="3.209" assertions="1">
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="5">
+
+  <testsuite name="CMS.Advanced-my-azure-customers-test"
+    errors="0" failures="0" hostname="" id="" package="CMS" skipped="0"
+    tests="5" time="43.63" timestamp="">
+  
+    <testcase name="Scenario 1: Display of the main screen" classname="CMS.Advanced-my-azure-customers-test" time="13.80" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 2: Search for a valid element" classname="CMS.Advanced-my-azure-customers-test" time="1.306" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 3: Searching for an invalid element" classname="CMS.Advanced-my-azure-customers-test" time="0.2170" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 3: Display details of the “Governance” option" classname="CMS.Advanced-my-azure-customers-test" time="0.3870" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 4: Display details of the “AzureNativeBackup” option" classname="CMS.Advanced-my-azure-customers-test" time="4.192" assertions="1">
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

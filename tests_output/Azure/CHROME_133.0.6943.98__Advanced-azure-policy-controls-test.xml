@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="6">
+
+  <testsuite name="Azure.Advanced-azure-policy-controls-test"
+    errors="0" failures="0" hostname="" id="" package="Azure" skipped="0"
+    tests="6" time="34.82" timestamp="">
+  
+    <testcase name="Scenario 1: Display of the main screen" classname="Azure.Advanced-azure-policy-controls-test" time="1.843" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 2: Search for a valid element" classname="Azure.Advanced-azure-policy-controls-test" time="2.001" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 3: Searching for an invalid element" classname="Azure.Advanced-azure-policy-controls-test" time="0.1560" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 3: Add a new record" classname="Azure.Advanced-azure-policy-controls-test" time="2.191" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 4: Edit a record" classname="Azure.Advanced-azure-policy-controls-test" time="2.630" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 5: Delete a record" classname="Azure.Advanced-azure-policy-controls-test" time="2.307" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

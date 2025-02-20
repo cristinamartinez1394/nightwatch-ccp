@@ -1,0 +1,42 @@
+# Node.js
+node_modules*
+
+# Logs
+*.log
+*.json
+*.ps1
+
+# Archivos de Nightwatch
+reports/
+
+# Dependencias de test (si usas algún framework adicional)
+test/reports/
+test/screenshots/
+
+# Archivos generados por Nightwatch
+*.json
+*.html
+
+# Configuración local (si la tienes)
+*.local
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Entorno de desarrollo
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos de build
+dist/
+build/
+
+# Archivos de entorno
+.env
+
+# Otros archivos que no deseas compartir
+*.bak
+*.tmp

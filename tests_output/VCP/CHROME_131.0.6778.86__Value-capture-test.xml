@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="1"
+            tests="7">
+
+  <testsuite name="VCP.Value-capture-test"
+    errors="1" failures="1" hostname="" id="" package="VCP" skipped="0"
+    tests="7" time="69.78" timestamp="">
+  
+    <testcase name="Scenario 1: Main Screen Display" classname="VCP.Value-capture-test" time="13.10" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 2: Search for an element by column" classname="VCP.Value-capture-test" time="1.404" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 3: Search for a valid element" classname="VCP.Value-capture-test" time="0.1990" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 4: Search for an invalid element" classname="VCP.Value-capture-test" time="0.2490" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 5: Display of the record creation form" classname="VCP.Value-capture-test" time="0.6200" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 6: Create a new value capture" classname="VCP.Value-capture-test" time="5.983" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Scenario 7: Editing a record in Value Capture" classname="VCP.Value-capture-test" time="11.68" assertions="2">
+
+      <failure message="Testing if element &lt;div.items-center h2&gt; contains text &#39;Edit Value Capture&#39; in 5000ms - expected &#34;contains text &#39;Edit Value Capture&#39;&#34; but got: &#34;element could not be located&#34; (5174ms)">    at Scenario 7: Editing a record in Value Capture (C:\Users\aura.martinez\Downloads\nightwatch-ccp\test\VCP\Value-capture-test.js:90:20)</failure>
+
+    
+    <error message="Testing if element [33m&lt;div.items-center h2&gt;[39m contains text [33m&#39;Edit Value Capture&#39;[39m in 5000ms - expected [32m&#34;contains text &#39;Edit Value Capture&#39;&#34;[39m but got: [31m&#34;element could not be located&#34;[39m [90m(5174ms)[39m" type="error"><![CDATA[
+    Error
+    at Proxy.&lt;anonymous&gt; (C:\Users\aura.martinez\Downloads\nightwatch-ccp\node_modules\nightwatch\lib\api\index.js:161:30)
+    at Scenario 7: Editing a record in Value Capture (C:\Users\aura.martinez\Downloads\nightwatch-ccp\test\VCP\Value-capture-test.js:90:20)
+    at Context.call (C:\Users\aura.martinez\Downloads\nightwatch-ccp\node_modules\nightwatch\lib\testsuite\context.js:515:35)
+    at TestCase.run (C:\Users\aura.martinez\Downloads\nightwatch-ccp\node_modules\nightwatch\lib\testsuite\testcase.js:58:31)
+    at Runnable.__runFn (C:\Users\aura.martinez\Downloads\nightwatch-ccp\node_modules\nightwatch\lib\testsuite\index.js:839:80)
+    at Runnable.run (C:\Users\aura.martinez\Downloads\nightwatch-ccp\node_modules\nightwatch\lib\testsuite\runnable.js:126:21)
+    at TestSuite.executeRunnable (C:\Users\aura.martinez\Downloads\nightwatch-ccp\node_modules\nightwatch\lib\testsuite\index.js:1000:49)
+    at TestSuite.handleRunnable (C:\Users\aura.martinez\Downloads\nightwatch-ccp\node_modules\nightwatch\lib\testsuite\index.js:1015:33)
+    at C:\Users\aura.martinez\Downloads\nightwatch-ccp\node_modules\nightwatch\lib\testsuite\index.js:839:21
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+       NoSuchElementError
+   An error occurred while running .click() command on &lt;span[class=&#34;icon-[mdi--pencil]&#34;]&gt;: Timed out while waiting for element &#34;span[class=&#34;icon-[mdi--pencil]&#34;]&#34; with &#34;css selector&#34; to be present for 5000 milliseconds.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    C:\Users\aura.martinez\Downloads\nightwatch-ccp\test\VCP\Value-capture-test.js:89
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     87 |            .setValue(&#39;input.w-full&#39;,&#39;Automation test - Value Capture&#39;)
+     88 |            .click(&#39;tbody tr:nth-child(1) td:nth-child(8)&#39;)
+     89 |            .click(&#39;span[class=&#34;icon-[mdi--pencil]&#34;]&#39;) 
+     90 |            .assert.textContains(&#39;div.items-center h2&#39;,&#39;Edit Value Capture&#39;)    
+     91 |            .setValue(&#39;input[data-testid=&#34;nameInput&#34;&#39;,&#39;Automation test - Value Capture - EDIT&#39;)
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
