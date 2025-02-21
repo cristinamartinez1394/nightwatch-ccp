@@ -16,6 +16,7 @@ test/screenshots/
 # Archivos generados por Nightwatch
 *.json
 *.html
+*.xml
 
 # Configuración local (si la tienes)
 *.local
