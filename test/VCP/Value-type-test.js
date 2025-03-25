@@ -27,8 +27,8 @@ module.exports={
         .waitForElementVisible('h1.flex',30000)
         .assert.textContains('h1.flex', 'welcome to the Cloud Control Platform')
         .click('button[type="button"] span')
-        .click('li:nth-child(11) button:nth-child(1)')
-        .click('li:nth-child(4) > button:nth-child(1) > div:nth-child(1) > div:nth-child(2) > p:nth-child(2)')
+        .click('li:nth-child(10) button:nth-child(1)')
+        .click('li:nth-child(4) > button:nth-child(1) > div:nth-child(1) > div:nth-child(3) > h2:nth-child(1)')
         .assert.textContains('a.text-lg', 'Value Type')
         },
 
@@ -36,7 +36,7 @@ module.exports={
         'Scenario 2: Search for a valid element':function(client){
             client
             .setValue('input.w-full','IT Security Risk Infra')
-            .assert.textContains('button.text-magentablue', 'IT Security Risk Infra')
+            .assert.textContains('button.text-left', 'IT Security Risk Infra')
         },
 
         '@tags':[],
@@ -51,7 +51,7 @@ module.exports={
         'Scenario 4: Create a new value type':function(client){
             let valueTypeName = Math.floor(Math.random()*200)
             client
-            .click('button.rounded-lg')
+            .click('button.primary')
             .assert.textContains('h2.text-lg','Add New Value Type')
             .setValue('input[data-testid="verticalInput"]',['Automation test'+ valueTypeName])
             .setValue('input[placeholder="Value name"]',['Automation' + valueTypeName])
