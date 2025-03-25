@@ -153,6 +153,9 @@ module.exports = {
       },
       desiredCapabilities: {
         browserName: 'chrome', // O el navegador que estés usando
+        chromeOptions: {
+          args: ['--incognito'] // Aquí se activa el modo incógnito
+        }
       },
       reporters: [
         reporter({

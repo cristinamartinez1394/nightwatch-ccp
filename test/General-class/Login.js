@@ -8,8 +8,6 @@ module.exports = class CustomComands {
         this.browser
         .url(Constants.URLS.DEV_URL)
         .maximizeWindow()
-        .click('input[value="Cancel"]')
-        .click('div#otherTileText')
         .setValue('input[name="loginfmt"]',user)
         .click('input[data-report-event="Signin_Submit"')
         .setValue('input[name=passwd]',password)
