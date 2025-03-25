@@ -27,8 +27,8 @@ module.exports={
         .waitForElementVisible('h1.flex',30000)
         .assert.textContains('h1.flex', 'welcome to the Cloud Control Platform')
         .click('button[type="button"] span')
-        .click('nav > menu > li:nth-child(1) > button')
-        .click('li:nth-child(5) > button:nth-child(1) > div:nth-child(1) > div:nth-child(2) > p:nth-child(2)')
+        .click('div:nth-child(3) > h2:nth-child(1)')
+        .click('li:nth-child(5) > button:nth-child(1) > div:nth-child(1) > div:nth-child(3) > h2:nth-child(1)')
         .assert.textContains('p.items-center', 'CMS Advanced Azure Policy Controls')
         },
 
@@ -49,7 +49,7 @@ module.exports={
          '@tags':[],
          'Scenario 3: Add a new record':function(client){
             client
-            .click('button.rounded-lg')
+            .click('button.primary')
             .assert.textContains('h2.text-lg','Add Azure Policy')
             .setValue('input#policyId','383856f8-de7f-44a2-81fc-e5135b5c2aa5')
             .setValue('input#policyName','Automation policy')
