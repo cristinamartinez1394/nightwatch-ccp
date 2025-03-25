@@ -28,7 +28,7 @@ module.exports={
         .assert.textContains('h1.flex', 'welcome to the Cloud Control Platform')
         .click('button[type="button"] span')
         .click('li:nth-child(2) button:nth-child(1)')
-        .click('.font-medium.text-base.false')
+        .click('button.justify-between div')
         .assert.textContains('p.items-center', 'Customers')
         },
         

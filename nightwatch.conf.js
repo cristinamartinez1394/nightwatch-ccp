@@ -9,7 +9,9 @@
 // | |\  || || (_| || | | || |_  \ V  V / | (_| || |_ | (__ | | | |
 // \_| \_/|_| \__, ||_| |_| \__|  \_/\_/   \__,_| \__| \___||_| |_|
 //             __/ |
-//            |___/
+//    
+
+const reporter = require('nightwatch-html-reporter');
 
 module.exports = {
   // An array of folders (excluding subfolders) where your tests are located;
@@ -131,6 +133,40 @@ module.exports = {
     enabled: true,
     log_path: './logs/analytics',
     client_id: '931738f5-fc90-463f-8706-100e3a59aa79'
-  }
-  
+  },
+
+  test_settings: {
+    default: {
+      screenshots: {
+        enabled: true,
+        on_failure: true,
+        on_error: true,
+        path: './screenshots', // Directorio donde se guardarán las capturas
+      },
+      selenium: {
+        start_process: true, // Asegúrate de que esté en true
+        server_path: require('selenium-server').path, // Ruta del servidor Selenium
+        port: 9515, // Puerto que debe estar abierto para la conexión de ChromeDriver
+        cli_args: {
+          'webdriver.chrome.driver': require('chromedriver').path // Ruta del ChromeDriver
+        }
+      },
+      desiredCapabilities: {
+        browserName: 'chrome', // O el navegador que estés usando
+      },
+      reporters: [
+        reporter({
+          openReportInBrowser: true, // Abrir el reporte automáticamente en el navegador
+          showPassedTests: true, // Mostrar pruebas pasadas también
+          showFailedTests: true, // Mostrar pruebas fallidas
+          reportsDirectory: './reports', // Directorio donde se guardarán los informes
+        })
+      ],
+      afterEach: function (browser, done) {
+        browser.saveScreenshot('./screenshots/afterEach_screenshot.png', function() {
+          done();
+        });
+      }
+    }
+  }  
 };
