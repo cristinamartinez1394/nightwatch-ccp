@@ -27,8 +27,8 @@ module.exports={
         .waitForElementVisible('h1.flex',30000)
         .assert.textContains('h1.flex', 'welcome to the Cloud Control Platform')
         .click('button[type="button"] span')
-        .click('li:nth-child(11) button:nth-child(1)')
-        .click('li:nth-child(3) > button:nth-child(1) > div:nth-child(1) > div:nth-child(2) > h2:nth-child(1)')
+        .click('li:nth-child(10) button:nth-child(1)')
+        .click('li:nth-child(3) > button:nth-child(1) > div:nth-child(1) > div:nth-child(3) > h2:nth-child(1)')
         .assert.textContains('a.text-lg', 'Value Report')
         },
 
