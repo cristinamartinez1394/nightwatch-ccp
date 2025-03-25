@@ -28,8 +28,8 @@ module.exports={
         .assert.textContains('h1.flex', 'welcome to the Cloud Control Platform')
         .click('button[type="button"] span')
         .click('div:nth-child(3) > h2:nth-child(1)')
-        .click('li:nth-child(4) > button:nth-child(1) > div:nth-child(1) > div:nth-child(2) > p:nth-child(2)')
-        .assert.textContains('p.items-center', 'CMS Advanced Azure Impact Database')
+        .click('li:nth-child(4) > button:nth-child(1) > div:nth-child(1) > div:nth-child(3) > h2:nth-child(1)')
+        .assert.textContains('.items-center.black.font-Poppins.text-lg.font-semibold', 'CMS Advanced Azure Impact Database')
         },
 
         '@tags':[],
@@ -49,7 +49,7 @@ module.exports={
         '@tags':[], 
         'Scenario 4: Add a new record':function(client){
             client
-            .click('button.rounded-lg')
+            .click('button.primary')
             .assert.textContains('h2.text-lg','Add Impact Database')
             .setValue('input[name="customerSCU"]','XX-SCU-131194')
             .setValue('input[name="customerName"]','Automation database')
