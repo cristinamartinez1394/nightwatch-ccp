@@ -29,23 +29,23 @@ module.exports={
         .waitForElementVisible('h1.flex',30000)
         .assert.textContains('h1.flex', 'welcome to the Cloud Control Platform')
         .click('button[type="button"] span')
-        .click('li:nth-child(11) button:nth-child(1)')
-        .click('li:nth-child(2) > button:nth-child(1) > div:nth-child(1) > div:nth-child(2) > h2:nth-child(1)')
+        .click('li:nth-child(10) button:nth-child(1)')
+        .click('button.text-magentablue h2')
         .assert.textContains('a.text-lg', 'Value Capture')
         },
 
         '@tags':[],
         'Scenario 2: Search for an element by column':function(client){
             client
-            .setValue('th:nth-child(3) > div > div > input','Digital Supply Chain')
-            .assert.textContains('tbody tr:nth-child(1) td:nth-child(3)','Digital Supply Chain')
+            .setValue('th:nth-child(3) > div > div > input','Cost Saving Identification')
+            .assert.textContains('tbody tr:nth-child(1) td:nth-child(3)','Cost Saving Identification')
         },
 
         '@tags':[],
         'Scenario 3: Search for a valid element':function(client){
             client
-            .setValue('input.w-full','Dev Integration')
-            .assert.textContains('div.text-magentablue', 'Dev Integration')
+            .setValue('input.w-full','value capture gen')
+            .assert.textContains('div.text-magentablue', 'value capture gen')
             },
         
         '@tags':[],
@@ -60,7 +60,7 @@ module.exports={
         'Scenario 5: Display of the record creation form':function(client){
             client
             .click('button.primary')
-            .assert.textContains('div.items-center h2','Create Value Capture')
+            .assert.textContains('.text-xl.font-semibold.mb-4','Create Value Capture')
         },
 
         '@tags':[],
@@ -90,7 +90,7 @@ module.exports={
            .setValue('input.w-full', 'Automation test - Value Capture')
            .click('a[class="hover:font-semibold"]')
            .click('span[class="icon-[mdi--pencil]"]')
-           .assert.textContains('div.items-center h2','Edit Value Capture')    
+           .assert.textContains('.text-xl.font-semibold.mr-2','Edit Value Capture')    
            .setValue('input[data-testid="nameInput"','Automation test - Value Capture - EDIT')
            .setValue('input[data-testid="identifiedByInput"]','Automation nightwatch - test - EDIT')
            .click('button#submit-button')
