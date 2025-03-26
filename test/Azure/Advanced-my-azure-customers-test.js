@@ -28,7 +28,7 @@ module.exports={
         .assert.textContains('h1.flex', 'welcome to the Cloud Control Platform')
         .click('button[type="button"] span')
         .click('nav > menu > li:nth-child(1) > button')
-        .click('div:nth-child(1) > div:nth-child(2) > p:nth-child(2)')
+        .click('h2[class="text-sm font-normal false"]')
         .assert.textContains('a.black', 'CMS Advanced Azure Customers')
         },
 
