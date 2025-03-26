@@ -28,7 +28,7 @@ module.exports={
         .assert.textContains('h1.flex', 'welcome to the Cloud Control Platform')
         .click('button[type="button"] span')
         .click('nav > menu > li:nth-child(1) > button')
-        .click(':nth-child(2) > button:nth-child(1) > div:nth-child(1) > div:nth-child(2) > h2:nth-child(1)')
+        .click('li:nth-child(2) > button:nth-child(1) > div:nth-child(1) > div:nth-child(3) > h2:nth-child(1)')
         .assert.textContains('a.text-lg', 'CMS Essentials Azure Customers')
         },
 
@@ -43,22 +43,16 @@ module.exports={
         'Scenario 3: Search for a valid element':function(client){
             client
             .setValue('input[type="search"]','DevOlairSoares')
-            .assert.textContains('button.text-magentablue span','DevOlairSoares')            
+            .assert.textContains('tbody tr td:nth-child(1)','DevOlairSoares')            
         },
 
-        '@tags:':[],
-        'Scenario 4: Group display':function(client){
-            client
-            .click('button.text-magentablue span')
-            .assert.textContains('h2.text-lg','DevOlairSoares Groups:')
-        },
-
+       
         '@tags':[],
-        'Scenario 5: Helper display':function(client){
+        'Scenario 4: Helper display':function(client){
             client
-            .click('section.shadow-xs span')
             .click('td.text-center button')
-            .assert.textContains('h1.text-center','Olair-swo - Subscriptions')
+            .setValue('input[placeholder="Please Select Tenant"]',['ff1d900f-f7d9-4fc9-a682-e36da465bc51',client.Keys.ENTER])
+            .assert.textContains('h1.text-center','DevOlairSoares - Subscriptions')
             .click('span.text-magentablue')
             .setValue('input[autocapitalize="none"]',['Failure Anomalies - funcolr2',client.Keys.ENTER])
             .setValue('textarea#description','Testing')
