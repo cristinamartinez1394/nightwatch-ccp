@@ -75,7 +75,7 @@ module.exports={
          },
 
          '@tags':[],
-         'Scenario 5: Delete a record':function(client){
+         'Scenario 6: Delete a record':function(client){
             client
             .click('span.cursor-default')
             .click('span[class*="text-red-"]')

@@ -143,6 +143,12 @@ module.exports = {
         on_error: true,
         path: './screenshots', // Directorio donde se guardarán las capturas
       },
+
+      test_workers: {
+        enabled: true, // Habilitar los test workers
+        workers: "auto" // Esto detectará automáticamente el número de procesos según tu CPU
+      },
+      
       selenium: {
         start_process: true, // Asegúrate de que esté en true
         server_path: require('selenium-server').path, // Ruta del servidor Selenium
