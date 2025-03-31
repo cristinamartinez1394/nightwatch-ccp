@@ -16,7 +16,7 @@ const reporter = require('nightwatch-html-reporter');
 module.exports = {
   // An array of folders (excluding subfolders) where your tests are located;
   // if this is not specified, the test source must be passed as the second argument to the test runner.
-  src_folders: ['test','nightwatch/examples'],
+  src_folders: ['test','test'],
 
   // See https://nightwatchjs.org/guide/concepts/page-object-model.html
   page_objects_path: ['nightwatch/page-objects'],
@@ -71,6 +71,7 @@ module.exports = {
             //'--ignore-certificate-errors',
             //'--allow-insecure-localhost',
             //'--headless=new'
+            '--incognito'
           ]
         }
       },
@@ -148,7 +149,7 @@ module.exports = {
         enabled: true, // Habilitar los test workers
         workers: "auto" // Esto detectará automáticamente el número de procesos según tu CPU
       },
-      
+
       selenium: {
         start_process: true, // Asegúrate de que esté en true
         server_path: require('selenium-server').path, // Ruta del servidor Selenium

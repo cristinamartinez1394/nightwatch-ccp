@@ -1,7 +1,7 @@
 module.exports = class Constants{
     static CREDENTIALS = {
-        USER: 'cypress.test2@swolighthousedev.onmicrosoft.com',
-        PASSWORD: 'AutomationSWO*',
+        USER: 'cypress.test1@swolighthousedev.onmicrosoft.com',
+        PASSWORD: '*fMH#5N%J0k#HMF"yZu3',
         
     };
 
