@@ -14,11 +14,11 @@ module.exports={
     },
     
     beforeEach:function(){
-        console.log('beforeEach: Ejecutando step')
+        console.log('beforeEach: Executing step')
     },
     
     afterEach: function(){
-        console.log('afterEach: Step ejecutado!')
+        console.log('afterEach: Step Executed!')
     },
 
     '@tags':[],
